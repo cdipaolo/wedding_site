@@ -1,0 +1,84 @@
+.page-body {
+  max-width: 45em;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+@media (max-width: 1000px) {
+  .page-body {
+    max-width: 100%;
+  }
+}
+
+.info-container {
+  vertical-align: left;
+  padding-top: 0;
+}
+
+.profile-picture {
+  vertical-align: right;
+  float: right;
+  max-height: 15.175em;
+  padding: 1.5em 0em 0.5em 1em;
+}
+
+.sub-page-main-photo {
+  vertical-align: right;
+  float: right;
+  max-height: 9em;
+  padding: 1.5em 0em 0.5em 1em;
+}
+
+.plot {
+  max-width: 30em;
+  display: block;
+  margin: auto;
+  padding: 1em;
+}
+
+table {
+  padding-left: 0.5em;
+}
+
+td {
+  padding: 0 1em 0 1em;
+}
+
+@media (max-width: 1000px) {
+  td,th {
+    white-space: nowrap;
+    font-size: xx-large;
+  }
+}
+
+a, a:link, a:visited, a:focus, a:active {
+  color: green;
+}
+a:hover {
+  color: #5B9853;
+}
+
+pre.algorithm {
+  padding-left: 2em;
+}
+
+table {
+  margin: auto;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  margin-top: 1.5em;
+}
+
+th {
+  font-weight: normal;
+  border-bottom: 1px solid;
+}
+
+td {
+  text-align: right;
+}
+
+p.caption {
+  padding-left: 3em;
+  padding-right: 3em;
+}
