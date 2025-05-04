@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>Daphne & Conner's Wedding</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conner DiPaolo's Personal Website">
-  <meta name="author" content="Conner DiPaolo">
+  <meta name="description" content="Daphne & Conner's Wedding Website">
+  <meta name="author" content="Daphne Poon & Conner DiPaolo">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🌵</text></svg>"></link>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Homemade+Apple&display=swap" rel="stylesheet">
@@ -111,31 +111,25 @@
       navLinks.classList.toggle('open');
       navToggle.classList.toggle('open');
     });
-    // Smooth scroll
+    // Improved smooth scroll: always scroll, even if already at anchor
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
+        e.preventDefault();
         if (href === '#home') {
-          e.preventDefault();
-          // Offset for sticky nav
-          const nav = document.querySelector('.main-nav');
-          const navHeight = nav ? nav.offsetHeight : 0;
           window.scrollTo({
             top: 0,
             left: 0,
             behavior: 'smooth'
           });
-          navLinks.classList.remove('open');
-          navToggle.classList.remove('open');
         } else {
           const target = document.querySelector(href);
           if (target) {
-            e.preventDefault();
             target.scrollIntoView({ behavior: 'smooth' });
-            navLinks.classList.remove('open');
-            navToggle.classList.remove('open');
           }
         }
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('open');
       });
     });
   </script>
