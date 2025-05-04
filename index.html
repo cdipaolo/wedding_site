@@ -8,135 +8,136 @@
   <meta name="author" content="Conner DiPaolo">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🌵</text></svg>"></link>
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-    .image-row {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
-    }
-    .image-item {
-      width: 30%;
-    }
-    .image-item img {
-      width: 100%;
-      height: auto;
-      cursor: pointer;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    @media (max-width: 600px) {
-      .image-row {
-        flex-direction: column;
-      }
-      .image-item {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Homemade+Apple&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="page-body">
-  <h1>Daphne and Conner Are Getting Married!</h1>
-  <p>We’re thrilled to celebrate our special day with you in beautiful Mérida, Mexico!</p>
-  <p>Save the Date: April 3, 2026 | Hacienda Sac Chich, Mérida, Mexico</p>
-
-  <div class="image-row">
-    <div class="image-item">
-      <img src="img/daphne_conner9.jpg" onmouseover="this.src='img/daphne_conner10.jpg'" onmouseout="this.src='img/daphne_conner9.jpg'">
+  <nav class="main-nav">
+    <div class="nav-container">
+      <span class="nav-logo mobile-only">Daphne & Conner</span>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#accommodations">Accommodations</a></li>
+        <li><a href="#excursions">Excursions</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
     </div>
-    <div class="image-item">
-      <img src="img/daphne_conner7.jpg" onmouseover="this.src='img/daphne_conner5.jpg'" onmouseout="this.src='img/daphne_conner7.jpg'">
+  </nav>
+  <div class="invite-container" id="home">
+    <div class="decorative-line"><span class="heart">&#10084;</span></div>
+    <div class="save-date">SAVE THE DATE</div>
+    <h1 class="names"><span class="accent-font">Daphne & Conner</span></h1>
+    <div class="icon-row">
+      <img src="img/wedding_save_the_date_icon.svg" alt="Wedding invitation icons: cake, leaf, bouquet, rings" class="main-invite-icons" />
     </div>
-    <div class="image-item">
-      <img src="img/daphne_conner11.jpg" onmouseover="this.src='img/daphne_conner12.jpg'" onmouseout="this.src='img/daphne_conner11.jpg'">
+    <div class="date-line">FRIDAY APRIL 3 2026</div>
+    <div class="location accent-font">Hacienda Sac Chich<br>Mérida, Mexico</div>
+    <div class="decorative-line bottom"><span class="heart">&#10084;</span></div>
+    <div class="page-body">
+      <p>We're thrilled to celebrate our special day with you in beautiful Mérida, Mexico!</p>
+      <h2 id="schedule">Schedule</h2>
+      <ul>
+        <li><strong>Thursday 4/2:</strong> Join us for drinks at a local Mérida bar (details TBD) if you're flying in that night.</li>
+        <li><strong>Friday 4/3:</strong> Wedding day at Hacienda Sac Chich!</li>
+        <li><strong>Saturday 4/4:</strong> Free day — explore on your own or join us for optional excursions (see below.)</li>
+        <li><strong>Sunday 4/5:</strong> Departure day — safe travels home!</li>
+      </ul>
+      <h2 id="location">Location</h2>
+      <p>The wedding will take place at the stunning <a href="https://www.haciendasacchich.com/" target="_blank">Hacienda Sac Chich</a>, in the jungle just outside Mérida, Mexico. This historic venue features beautiful architecture and lush surroundings — perfect for our celebration!</p>
+      <h2 id="accommodations">Accommodations</h2>
+      <p>Here are some recommendations in Mérida from the Hacienda owners:</p>
+      <ul>
+        <li> <strong>AirBnB's</strong>
+          <ul>
+            <li><a href="https://www.airbnb.com/rooms/610753599001512084"><strong>Casa Lala</strong></a>: 2 beds, 2 baths (2-4 guests). Huge private pool, chic vibe, self-check-in. Perfect Centro Mérida location.</li>
+            <li><a href="https://www.airbnb.com/rooms/502781474884067403"><strong>Casa Architects</strong></a>: 4 beds, 4 baths (4-8 guests). Spacious and minimal, great for groups, self-check-in, prime spot.</li>
+          </ul>
+          </br>
+        </li>
+        <li> <strong>Hotels in Mérida</strong>
+          <ul>
+            <li><a href="https://www.casalecanda.com/en/"><strong>Casa Lecanda</strong></a>: Small, upscale boutique hotel.</li>
+            <li><a href="https://www.mansionmerida.com/en/"><strong>Mansion Mérida</strong></a>: 14 historic suites with old-world charm.</li>
+            <li><a href="https://www.hilton.com/en/hotels/midvmqq-villa-mercedes-merida/"><strong>Villa Mercedes</strong></a>: Curio Collection by Hilton.</li>
+            <li><a href="https://diezdiezcollection.com/en/home-1/"><strong>Diez Diez Hotel</strong></a>: Design-focused boutique.</li>
+            <li><a href="https://www.surenohotel.com/en"><strong>Hotel Sureno</strong></a>: 17 suites with a gorgeous rooftop.</li>
+          </ul>
+          </br>
+        </li>
+        <li> <strong>Near the Hacienda</strong>
+          <ul>
+            <li><a href="https://galopina.com.mx/en/"><strong>Galopina</strong></a>: Closer to the venue but requires a rental car.</li>
+          </ul>
+        </li>
+      </ul>
+      <h2 id="excursions">Saturday Excursion Ideas</h2>
+      <p>Nothing formal planned, but here are some options we're excited about. We will send out more details closer to the wedding day.</p>
+      <ul>
+        <li><strong>Chichén Itzá:</strong> Explore the iconic Mayan ruins, about 1.5 hours from Mérida — a must-see Wonder of the World and UNESCO heritage site!</li>
+        <li><strong>Mérida Exploration:</strong> Wander the vibrant streets, visit Plaza Grande, or browse local markets full of color and culture.</li>
+        <li><strong>Cenotes:</strong> Swim in the Yucatan's famous natural sinkholes—crystal-clear waters and a refreshing adventure.</li>
+        <li><strong>Beach Day:</strong> Gorgeous beaches along the Gulf just 40min from downtown Mérida.</li>
+      </ul>
+      <h2 id="faq">FAQ</h2>
+      <h3>Do I need a visa?</h3>
+      <p>US, UK, and Hong Kong citizens don't need a visa for tourist stays in Mexico (up to 180 days). Just bring a valid passport.</p>
+      <h3>Which airport should I fly into?</h3>
+      <p>Mérida International Airport (MID) is the closest, about 30-45 minutes from downtown Mérida.</p>
+      <h3>Is Mérida safe?</h3>
+      <p>Yes! Mérida is known as one of Mexico's safest cities. The U.S. State Department rates Yucatan as Level 1 ("Exercise Normal Precautions"), the same as most of Europe.</p>
+      <h3>How do I get around?</h3>
+      <p>We'll provide transportation to/from the wedding. For Saturday excursions, consider renting a car—Uber works in Mérida but not near the Hacienda.</p>
+      <h3>What's the weather like?</h3>
+      <p>April is warm and dry—highs around 90°F (32°C), lows near 70°F (21°C). Pack light layers and sunscreen.</p>
+      <h3>What should I wear?</h3>
+      <p>Not black tie, but dress sharp—think cocktail attire or festive semi-formal.</p>
+      <h3>Can I bring a plus-one?</h3>
+      <p>Only if they're explicitly named on your invitation. Check with us if you're unsure!</p>
+      <p>We can't wait to see you there! If you have any questions, feel free to reach out to Daphne and Conner.</p>
     </div>
   </div>
-
-  <div class="image-row">
-    <div class="image-item">
-      <a href="https://www.haciendasacchich.com/" target="_blank">
-        <img src="img/sac_chich.jpg">
-      </a>
-    </div>
-    <div class="image-item">
-      <a href="https://en.wikipedia.org/wiki/Chichen_Itza" target="_blank">
-        <img src="img/chichen_itza.jpg">
-      </a>
-    </div>
-    <div class="image-item">
-      <a href="https://en.wikipedia.org/wiki/Mérida,_Yucatan" target="_blank">
-        <img src="img/merida.jpg">
-      </a>
-    </div>
-  </div>
-
-  <h2>Schedule</h2>
-  <ul>
-    <li><strong>Thursday 4/2:</strong> Join us for drinks at a local Mérida bar (details TBD) if you’re flying in that night.</li>
-    <li><strong>Friday 4/3:</strong> Wedding day at Hacienda Sac Chich!</li>
-    <li><strong>Saturday 4/4:</strong> Free day — explore on your own or join us for optional excursions (see below.)</li>
-    <li><strong>Sunday 4/5:</strong> Departure day — safe travels home!</li>
-  </ul>
-
-  <h2>Location</h2>
-  <p>The wedding will take place at the stunning <a href="https://www.haciendasacchich.com/" target="_blank">Hacienda Sac Chich</a>, in the jungle just outside Mérida, Mexico. This historic venue features beautiful architecture and lush surroundings — perfect for our celebration!</p>
-
-  <h2>Accommodations</h2>
-  <p>Here are some recommendations in Mérida from the Hacienda owners:</p>
-  <ul>
-    <li> <strong>AirBnB's</strong>
-      <ul>
-        <li><a href="https://www.airbnb.com/rooms/610753599001512084"><strong>Casa Lala</strong></a>: 2 beds, 2 baths (2-4 guests). Huge private pool, chic vibe, self-check-in. Perfect Centro Mérida location.</li>
-        <li><a href="https://www.airbnb.com/rooms/502781474884067403"><strong>Casa Architects</strong></a>: 4 beds, 4 baths (4-8 guests). Spacious and minimal, great for groups, self-check-in, prime spot.</li>
-      </ul>
-      </br>
-    </li>
-    <li> <strong>Hotels in Mérida</strong>
-      <ul>
-        <li><a href="https://www.casalecanda.com/en/"><strong>Casa Lecanda</strong></a>: Small, upscale boutique hotel.</li>
-        <li><a href="https://www.mansionmerida.com/en/"><strong>Mansion Mérida</strong></a>: 14 historic suites with old-world charm.</li>
-        <li><a href="https://www.hilton.com/en/hotels/midvmqq-villa-mercedes-merida/"><strong>Villa Mercedes</strong></a>: Curio Collection by Hilton.</li>
-        <li><a href="https://diezdiezcollection.com/en/home-1/"><strong>Diez Diez Hotel</strong></a>: Design-focused boutique.</li>
-        <li><a href="https://www.surenohotel.com/en"><strong>Hotel Sureno</strong></a>: 17 suites with a gorgeous rooftop.</li>
-      </ul>
-      </br>
-    </li>
-    <li> <strong>Near the Hacienda</strong>
-      <ul>
-        <li><a href="https://galopina.com.mx/en/"><strong>Galopina</strong></a>: Closer to the venue but requires a rental car.</li>
-      </ul>
-    </li>
-  </ul>
-
-  <h2>Saturday Excursion Ideas</h2>
-  <p>Nothing formal planned, but here are some options we’re excited about. We will send out more details closer to the wedding day.</p>
-  <ul>
-    <li><strong>Chichén Itzá:</strong> Explore the iconic Mayan ruins, about 1.5 hours from Mérida — a must-see Wonder of the World and UNESCO heritage site!</li>
-    <li><strong>Mérida Exploration:</strong> Wander the vibrant streets, visit Plaza Grande, or browse local markets full of color and culture.</li>
-    <li><strong>Cenotes:</strong> Swim in the Yucatan’s famous natural sinkholes—crystal-clear waters and a refreshing adventure.</li>
-    <li><strong>Beach Day:</strong> Gorgeous beaches along the Gulf just 40min from downtown Mérida.</li>
-  </ul>
-
-  <h2>FAQ</h2>
-  <h3>Do I need a visa?</h3>
-  <p>US, UK, and Hong Kong citizens don’t need a visa for tourist stays in Mexico (up to 180 days). Just bring a valid passport.</p>
-  <h3>Which airport should I fly into?</h3>
-  <p>Mérida International Airport (MID) is the closest, about 30-45 minutes from downtown Mérida.</p>
-  <h3>Is Mérida safe?</h3>
-  <p>Yes! Mérida is known as one of Mexico’s safest cities. The U.S. State Department rates Yucatan as Level 1 (“Exercise Normal Precautions”), the same as most of Europe.</p>
-  <h3>How do I get around?</h3>
-  <p>We’ll provide transportation to/from the wedding. For Saturday excursions, consider renting a car—Uber works in Mérida but not near the Hacienda.</p>
-  <h3>What’s the weather like?</h3>
-  <p>April is warm and dry—highs around 90°F (32°C), lows near 70°F (21°C). Pack light layers and sunscreen.</p>
-  <h3>What should I wear?</h3>
-  <p>Not black tie, but dress sharp—think cocktail attire or festive semi-formal.</p>
-  <h3>Can I bring a plus-one?</h3>
-  <p>Only if they’re explicitly named on your invitation. Check with us if you’re unsure!</p>
-
-  <p>Can’t wait to see you there! If you have any questions, feel free to reach out to Daphne and Conner.</p>
-  </div>
+  <script>
+    // Hamburger menu toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+    // Smooth scroll
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#home') {
+          e.preventDefault();
+          // Offset for sticky nav
+          const nav = document.querySelector('.main-nav');
+          const navHeight = nav ? nav.offsetHeight : 0;
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });
+          navLinks.classList.remove('open');
+          navToggle.classList.remove('open');
+        } else {
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+            navLinks.classList.remove('open');
+            navToggle.classList.remove('open');
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
