@@ -31,6 +31,7 @@
         <li><a href="#accommodations">Accommodations</a></li>
         <li><a href="#excursions">Excursions</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </div>
   </nav>
@@ -58,7 +59,8 @@
       <p></p> We quickly became friends, and started dating in October (our first date was a visit the Scripps
       College pool). <p></p>
       For most of the last 8 years, we've lived apart. Conner in SF, then Chicago, then NYC, and Daphne in
-      Claremont, then SF, then London. We're so excited to finally be together in NYC at the end of 2025, and to kick
+      Claremont, then SF, then London. <p></p>
+      We're so excited to finally be together in NYC at the end of 2025, and to kick
       off this new chapter of our lives, with you all, in beautiful Mérida!</p>
       <h2 id="schedule">Schedule</h2>
       <ul>
@@ -153,21 +155,23 @@
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
-        e.preventDefault();
-        if (href === '#home') {
-          window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-          });
-        } else {
-          const target = document.querySelector(href);
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          if (href === '#home') {
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: 'smooth'
+            });
+          } else {
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth' });
+            }
           }
+          navLinks.classList.remove('open');
+          navToggle.classList.remove('open');
         }
-        navLinks.classList.remove('open');
-        navToggle.classList.remove('open');
       });
     });
   </script>

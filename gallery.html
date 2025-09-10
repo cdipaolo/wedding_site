@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Daphne & Conner's Wedding - Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo Gallery of Daphne & Conner's Wedding">
+    <meta name="author" content="Daphne Poon & Conner DiPaolo">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🌵</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <span class="nav-logo mobile-only">Daphne & Conner</span>
+            <button class="nav-toggle" aria-label="Open menu">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#schedule">Schedule</a></li>
+                <li><a href="index.html#location">Location</a></li>
+                <li><a href="index.html#accommodations">Accommodations</a></li>
+                <li><a href="index.html#excursions">Excursions</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="gallery-container">
+        <h3>A few memories from over the years</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="img/daphne_conner20.jpg" alt=">LA, 2017" />
+                <div class="gallery-caption">Our very first photo together! A very blurry selfie, taken over
+                    Thanksgiving break in LA (2017)</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/daphne_conner23.jpg" alt="Hong Kong, 2018" />
+                <div class="gallery-caption">Together again, after Conner spent a semester abroad at CUHK in Hong Kong
+                    (2018)</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/daphne_conner14.jpeg" alt="Claremont, 2019" />
+                <div class="gallery-caption">Another day at West Dorm (2019)</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/daphne_conner13.jpeg" alt="Claremont, 2019" />
+                <div class="gallery-caption">Conner's Graduation at Harvey Mudd (2019)</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/daphne_conner17.jpg" alt="Budapest, 2020" />
+                <div class="gallery-caption">Gellért Baths in Budapest, with Conner's dad Erik enjoying himself in the
+                    back (2020)</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/daphne_conner19.jpg" alt="Chicago, 2021" />
+                <div class="gallery-caption">Daphne doesn't know how the relationship survived this haircut (2021)</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/daphne_conner22.png" alt="Facetime, 2021" />
+                <div class="gallery-caption">Facetime: the most accurate summary of our relationship (2021)</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/daphne_conner10.jpg" alt="Japan, 2022" />
+                <div class="gallery-caption">Conner joined Daphne's family for an onsen-heavy roadtrip through Japan
+                    (2022)</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/daphne_conner21.jpg" alt="Paris, 2023" />
+                <div class="gallery-caption">Montmatre, Paris (2023)</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/daphne_conner6.jpg" alt="Saalbach Hinterglemm, 2023" />
+                <div class="gallery-caption">✌️ (2023)</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/daphne_conner11.jpg" alt="Istanbul, 2024" />
+                <div class="gallery-caption">Istanbul, soon after the engagement (2024)</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/daphne_conner18.jpg" alt="NYC, 2025" />
+                <div class="gallery-caption">NYC with Daphne's sister Sylvana (2025)</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Hamburger menu toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            navToggle.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>
