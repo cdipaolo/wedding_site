@@ -93,7 +93,7 @@ body {
 .page-body {
   max-width: 45em;
   margin: 2em auto 0 auto;
-  padding: 2em 0 0 0;
+  padding: 0 0 0 0;
   color: #222;
   font-size: 1.05em;
   text-align: left;
@@ -103,7 +103,7 @@ h2, h3 {
   color: #AB1400;
   font-family: 'Courier Prime', Courier, monospace;
   font-weight: bold;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 0.5em;
 }
 
@@ -118,7 +118,7 @@ h2[id] {
 
 ul {
   padding-left: 1.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 0em;
 }
 
 li strong {
