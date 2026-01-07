@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Daphne & Conner's Wedding - RSVP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RSVP for Daphne & Conner's Wedding">
+  <meta name="author" content="Daphne Poon & Conner DiPaolo">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🌵</text></svg>"> 
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <nav class="main-nav">
+    <div class="nav-container">
+      <span class="nav-logo mobile-only">Daphne & Conner</span>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#schedule">Schedule</a></li>
+        <li><a href="index.html#location">Location</a></li>
+        <li><a href="index.html#accommodations">Accommodations</a></li>
+        <li><a href="index.html#excursions">Excursions</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="invite-container" style="padding-top:2em; padding-bottom:3em;">
+    <h2 style="text-align:center; color:#AB1400;">RSVP</h2>
+    <p style="text-align:center; max-width:1280px; margin:0.5em auto 1em auto;">Please use the form below to RSVP for our wedding. If the form doesn't load, open it directly <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlMFeottFzdzE8iUcrVQ49ubOG1zaIzNH3JLiiIyTzH38zmw/viewform" target="_blank">here</a>!</p>
+
+    <div style="max-width:2000px; margin:0 auto;">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlMFeottFzdzE8iUcrVQ49ubOG1zaIzNH3JLiiIyTzH38zmw/viewform?embedded=true" width="100%" height="1757" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </div>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        navToggle.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+
+</html>
