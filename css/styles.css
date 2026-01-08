@@ -84,6 +84,122 @@ body {
   text-align: center;
 }
 
+/* Page-specific alignment for golden.html only */
+.golden-page .invite-container,
+.golden-page .page-body {
+  text-align: left;
+}
+
+.golden-page .invite-container ul,
+.golden-page .invite-container ol {
+  text-align: left;
+  margin-left: 1.25em;
+}
+
+.golden-page h3 {
+  text-align: center;
+}
+
+/* Golden ticket background for golden.html only */
+.golden-page {
+  background-color: #d4af37; /* base gold */
+  background-image:
+    linear-gradient(180deg, rgba(255,245,200,0.28), rgba(196,147,40,0.18)),
+    /* larger soft highlights */
+    radial-gradient(circle at 25% 20%, rgba(255,255,255,0.10), transparent 8%),
+    radial-gradient(circle at 75% 80%, rgba(0,0,0,0.06), transparent 18%),
+    /* tiny bright sparkles */
+    radial-gradient(circle at 10% 10%, rgba(255,255,255,0.14), transparent 4%),
+    radial-gradient(circle at 85% 25%, rgba(255,255,255,0.12), transparent 6%),
+    radial-gradient(circle at 40% 60%, rgba(255,255,255,0.08), transparent 5%),
+    repeating-linear-gradient(45deg, rgba(0,0,0,0.02) 0 1px, transparent 1px 6px);
+  background-size: cover, 900px 900px, 600px 600px, 120px 120px, 160px 160px, 140px 140px, 6px 6px;
+  background-blend-mode: overlay, screen, overlay, screen, screen, screen, normal;
+  background-attachment: fixed;
+}
+
+/* Optional subtle sparkle dots */
+.golden-page .invite-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.06) 0, transparent 8%),
+                    radial-gradient(circle at 60% 40%, rgba(255,255,255,0.04) 0, transparent 6%),
+                    radial-gradient(circle at 30% 70%, rgba(0,0,0,0.03) 0, transparent 10%);
+  background-size: 300px 300px, 400px 400px, 350px 350px;
+  opacity: 0.95;
+}
+
+/* Extra fine sparkle layer (subtle dotted texture that drifts) */
+.golden-page::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.9) 0.5px, transparent 1px);
+  background-size: 18px 18px;
+  opacity: 0.06;
+  mix-blend-mode: screen;
+  transform: translate3d(0,0,0);
+  animation: golden-drift 14s linear infinite;
+}
+
+@keyframes golden-drift {
+  0% { background-position: 0 0; opacity: 0.05; }
+  50% { background-position: -120px 80px; opacity: 0.09; }
+  100% { background-position: 0 0; opacity: 0.05; }
+}
+
+/* Font color overrides for golden ticket look (scoped to golden.html) */
+.golden-page,
+.golden-page .invite-container,
+.golden-page .page-body {
+  color: #0b0b0b; /* near-black used in image */
+}
+
+.golden-page h2 {
+  color: #000 !important;
+}
+
+.golden-page h3 {
+  color: #000;
+}
+
+/* Links and nav on golden page use dark color to match image */
+.golden-page a,
+.golden-page .nav-links li a {
+  color: #0b0b0b;
+}
+
+/* Make <strong> inherit the dark color instead of the site accent */
+.golden-page li strong {
+  color: inherit;
+}
+
+/* Remove the pale/pink panel behind the content on the golden page */
+.golden-page .invite-container {
+  background: transparent;
+}
+
+/* Restore header/nav appearance to site defaults for golden page */
+.golden-page .main-nav {
+  background: #fcf9f6;
+  border-bottom: 1px solid #e5e5e5;
+}
+.golden-page .main-nav .nav-links li a {
+  color: #AB1400 !important;
+}
+.golden-page .main-nav .nav-links li a:hover {
+  color: #7e0f00 !important;
+}
+
+/* Ensure header text keeps site fonts and color (don't inherit golden-page overrides) */
+.golden-page .main-nav,
+.golden-page .main-nav * {
+  color: inherit;
+}
+
 .decorative-line {
   display: flex;
   align-items: center;
