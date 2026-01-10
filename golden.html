@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Golden Guests — Hacienda Sac Chich</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Information for guests staying at Hacienda Sac Chich with Daphne & Conner">
+  <meta name="author" content="Daphne Poon & Conner DiPaolo">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🌵</text></svg>"> 
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="golden-page">
+  <nav class="main-nav">
+    <div class="nav-container">
+      <span class="nav-logo mobile-only">Daphne & Conner</span>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#schedule">Schedule</a></li>
+        <li><a href="index.html#location">Location</a></li>
+        <li><a href="index.html#accommodations">Accommodations</a></li>
+        <li><a href="index.html#excursions">Excursions</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="invite-container" style="padding-top:2em; padding-bottom:3em; max-width:900px;">
+    <h2 style="text-align:center; color:#AB1400;">Hacienda Guest Info</h2>
+
+    <p><a href="https://www.haciendasacchich.com/" target="_blank">Hacienda Sac Chich</a> (<a href="https://maps.app.goo.gl/E3Bf8TfD7fVVrf1u7" target="_blank">Google Maps</a>) is a private villa with a handful of guest rooms. We'll host a small number of friends and family on-site; this page lists logistics, arrival information, and house notes for those staying at the Hacienda. </p>
+
+    <h3>Rooms & Assignments</h3>
+    <p>Below are tentative room assignments grouped by house. We'll update these as RSVPs and confirmations come in.</p>
+
+    <h3>Casa Sisal</h3>
+    <ul>
+      <li><strong>Sisal Suite:</strong> King bed, private bathroom. (Assigned to: Guest A)</li>
+      <li><strong>Sisal Guest Room:</strong> Queen bed, shared bath. (Assigned to: )</li>
+    </ul>
+
+    <h3>Casita Calitza</h3>
+    <ul>
+      <li><strong>Calitza Main:</strong> King/Queen, private bath. (Assigned to: )</li>
+      <li><strong>Calitza Loft:</strong> Two twins / convertible. (Assigned to: )</li>
+    </ul>
+
+    <h3>Casa Vieja</h3>
+    <ul>
+      <li><strong>Vieja Room 1:</strong> Queen bed, shared bath. (Assigned to: )</li>
+      <li><strong>Vieja Room 2:</strong> Twin bed(s), shared facilities. (Assigned to: )</li>
+    </ul>
+
+    <h3>Casa Nueva</h3>
+    <ul>
+      <li><strong>Nueva Poolside:</strong> King bed, private entrance. (Assigned to: )</li>
+      <li><strong>Nueva Room 2:</strong> Queen bed. (Assigned to: )</li>
+    </ul>
+
+    <h3>Check-in / Check-out</h3>
+    <ul>
+      <li><strong>Check-in:</strong> After 10:00 AM on Thursday April 2nd.</li>
+      <li><strong>Check-out:</strong> By 11:00 AM on Sunday April 5th.</li>
+    </ul>
+
+    <h3>Getting There</h3>
+    <p>The Hacienda is approximately 40 minutes from Mérida (MID) by car. We recommend arranging shared transport or rental cars. If you need a pickup, contact the hosts.</p>
+
+    <h3>On-Site Details</h3>
+    <ul>
+      <li><strong>Meals:</strong> Breakfast will be provided each morning.</li>
+      <li><strong>Costs:</strong> We are covering the cost of the Hacienda. Pay us with good vibes ;)</li>
+    </ul>
+
+    <h3>House Notes & Packing</h3>
+    <ul>
+      <li>Bring light layers — evenings can be cooler in the hacienda courtyard.</li>
+      <li>Pack comfortable shoes for uneven grounds and walking paths.</li>
+      <li>Respect quiet hours after 11:00 PM for other guests.</li>
+      <li>There's a pool, so bring a swimsuit!</li>
+    </ul>
+
+    <p style="margin-top:1.2em;">Let us know if you have questions or updates!</p>
+  </div>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        navToggle.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+
+</html>
