@@ -100,6 +100,17 @@ body {
   text-align: center;
 }
 
+/* Page-specific alignment for hk.html only */
+.hk-page .invite-container ul,
+.hk-page .invite-container ol {
+  text-align: left;
+  margin-left: 1.25em;
+}
+
+.hk-page .events-grid {
+  text-align: left;
+}
+
 /* Golden ticket background for golden.html only */
 .golden-page {
   background-color: #d4af37; /* base gold */
@@ -386,6 +397,7 @@ body {
   border-radius: 6px;
   flex: 0 0 110px;
 }
+.event-body { flex: 1 1 auto; }
 .event-body .event-title { margin: 0 0 0.2em 0; font-size: 1.05em; }
 .event-body .event-date { color: #666; font-size: 0.95em; margin-bottom: 0.35em; }
 
